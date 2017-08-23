@@ -1,1 +1,1 @@
-# amp_study
+# amp_study project
