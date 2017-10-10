@@ -1,0 +1,202 @@
+<!doctype html>
+<html ⚡>
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Hello AMP world</title>
+    <link rel="canonical" href="hello-world.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script><!--amp video-->
+    <style amp-boilerplate>
+        body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+    </style>
+    <noscript>
+        <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+    <!-- 우리가 작성할 css는 이곳에  -->
+    <style amp-custom>
+        body {font-family:'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; background-color:#efefef;}
+        div,ul,li,span,strong,h1,h2,header,footer,section,article {padding:0; margin:0;}
+        ul,li {list-style:none;}
+        a {text-decoration:none;}
+        .blind {display:none;}
+        .header {padding:15px; background-color:#fff; text-align:center;}
+        .header>a {display:inline-block;}
+        .header>strong {display:block; font-size:large; color:black; bottom:0; flex-direction:column; floex-wrap:nowrap; justify-content:center; aling-item:center;}
+        .content {}
+        .svg-logo g {margin-top:10px;}
+        .st1 {fill-rule:evenodd; clip-rule:evenodd; fill:#fff;}
+        .svg-logo {fill:#6DABF8;}
+        [class^="content_section_"] {margin:10px 0; padding:10px 0; background-color:#fff; border:1px solid #eee; border-width:1px 0;}
+        .content_section_play {padding-top:20px; margin:0; overflow:hidden;}
+            .cont_title {display:block; margin:0; font-size:1.5em; padding:0 10px; letter-spacing:-1px;}
+            .cont_num {display:block; margin-bottom:5px; font-size:14px; color:#3783e0;}
+            .cont_info_date {display:block; padding:10px; font-size:12px; color:#999;}
+            .cont_video {width:100%;}
+            .cont_video amp-video {display:block; width:100%; height:auto;}
+            .cont_video .i-amphtml-fill-content {height:auto;}
+            .cont_info_link {display:block; padding:0 10px; font-size:14px;}
+                .cont_info_link>a {position:relative; margin-left:7px; display:inline-block; padding:0 10px; color:#333; text-decoration:none;}
+                .cont_info_link>a:after {display:block; content:''; position:absolute; left:0; top:4px; width:1px; height:12px; background-color:#333;}
+            .cont_sub_title {font-size:18px; padding:0 10px;}
+            .cont_scroll_w {padding:10px 0 0;}
+                .cont_sub_title {}
+                .cont_scroll_w {overflow-x:auto;}
+                    .cont_scroll_list {overflow:hidden;}
+                        .csl_inner {width:125px; float:left; margin-left:10px; text-overflow:ellipsis; overflow:hidden; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-word;}
+                            .csli_cont {display:block; color:#333;}
+                                .csli_title {font-size:14px; }
+                                .csli_cont amp-img {display:block; height:70px;}
+            .cont_public_w {padding:0 10px;}
+                .cont_public_list {}
+                    .cpl_inner {display:table; table-layout:fixed; margin-top:10px;}
+                        .cpli_cont {display:table-row; color:#333;}
+                            .cpli_cont>amp-img {display:table-cell; width:125px; height:70px;}
+                            .cpli_title {display:table-cell; vertical-align:middle; padding-left:10px; font-size:14px; line-height:20px; }
+                                .spli_date {display:block; font-size:12px; color:#adadad;}
+        .footer {display:block; padding:15px 0; text-align:center; color:#cbcdcf; background-color:#5e6773; font-size:12px; letter-spacing:-1px; }
+    </style>
+</head>
+<body class="wrap">
+    <header class="header">
+        <a href="http://m.sbs.co.kr" target="_top">
+            <svg class="svg-logo" width="50" height="50" id="svg-logo" viewBox="-249 301 50 50">
+                <g>
+                    <rect class="st0" height="50" width="50" x="-249" y="301"></rect>
+                    <g>
+                        <path class="st1" d="M-232.8,320l-3.7-3.4c-0.2-0.2-0.4-0.6-0.4-0.9c0-0.7,0.6-1.3,1.3-1.3h4.1v-1.8h-6.2c-1.9,0-3.6,1.3-3.6,3.4c0,0.9,0.4,1.7,0.9,2.3l4.4,4.1c0,0,0.8,0.6,0.5,1.4c-0.2,0.9-1.4,0.9-1.8,0.9c-0.4,0-4,0-4,0v3.6h6.1c2.4,0,4.4-1.9,4.4-4.2V324C-230.8,322.3-231.6,321-232.8,320z"></path>
+                        <path class="st1" d="M-208.3,320l-3.7-3.4c-0.2-0.2-0.4-0.6-0.4-0.9c0-0.7,0.6-1.3,1.3-1.3h4.1v-1.8h-6.3c-1.9,0-3.6,1.3-3.6,3.4c0,0.9,0.4,1.7,0.9,2.3l4.4,4.1c0,0,0.8,0.6,0.5,1.4c-0.2,0.9-1.4,0.9-1.8,0.9c-0.4,0-4,0-4,0v3.6h6.1c2.4,0,4.4-1.9,4.4-4.2V324C-206.2,322.3-207.1,321-208.3,320z"></path>
+                        <path class="st1" d="M-217.6,323.8c0-1.9-1.1-3.7-3.2-4.4c1.6-0.5,2.4-1.6,2.4-3.3c0-1.1-0.5-2-1.4-2.6c-1.2-0.8-2.9-0.8-2.9-0.8l0,0c-1.9,0-6.9,0-6.9,0v15.6c0,0,5,0,7.3,0c0.6,0,1.9-0.2,3-1C-218.3,326.4-217.6,325.1-217.6,323.8L-217.6,323.8zM-225.9,314.4h1.7c0.2,0,2,0,2.1,1.7c0.1,1.2-0.7,1.9-2.1,1.9c-0.6,0-1.8,0-1.8,0V314.4L-225.9,314.4z M-223.9,324.7c-0.6,0-2,0-2,0v-4.2h1.9c0.2,0,2.2,0,2.3,2C-221.5,323.8-222.6,324.7-223.9,324.7z"></path>
+                    </g>
+                </g>
+            </svg>
+            <strong class="blind">SBS</strong>
+        </a>
+        <strong>방송클립영상</strong>
+    </header>
+
+    <section class="content">
+        <!-- 비디오콘텐츠 -->
+        <div class="content_section_play">
+            <h1 class="cont_title">
+               <strong class="cont_num">조작 1회</strong>
+               <strong>[선공개] 유도선수였던 남궁민이 기레기가 된 이유는 </strong>
+            </h1>
+            <div class="cont_info_date">
+                <span>조회수 498</span>
+                <span>2017.07.24(월)</span>
+            </div>
+            <div class="cont_video">
+                <amp-video src="개발" poster="http://img2.sbs.co.kr/img/seditor/VD/2017/10/09/VD65432173_w640.jpg" layout="responsive" controls>
+                    <div fallback> <p>영상설명</p></div>
+                </amp-video>
+            </div>
+            <div class="cont_info_link">
+                <span class="cil_text">조작</span>
+                <a href="http://m.sbs.co.kr/builder/programReplayVideo.do?pgm_id=22000010462&pgm_build_id=23521&pgm_mnu_id=49042">방송클립영상 바로가기</a>
+            </div>
+        </div><!--//end:비디오콘텐츠 -->
+
+        <!-- 관련콘텐츠 -->
+        <div class="content_section_related">
+            <h2 class="cont_sub_title">관련콘텐츠</h2>
+            <div class="cont_scroll_w">
+                <ul class="cont_scroll_list" style="width:1080px;">
+                    <li class="csl_inner">
+                        <a href="#" class="csli_cont">
+                            <amp-img src="http://img2.sbs.co.kr/img/seditor/VD/2017/09/13/VD56833068_w640.jpg" layout="responsive" alt="AMP"></amp-img>
+                            <span class="csli_title">[메이킹] 조작! 배우들의 마지막 종영소감!</span>
+                        </a>
+                    </li>
+                    <li class="csl_inner">
+                        <a href="#" class="csli_cont">
+                            <amp-img src="http://img2.sbs.co.kr/img/seditor/VD/2017/09/13/VD56833068_w640.jpg" layout="responsive" alt="AMP"></amp-img>
+                            <span class="csli_title">[메이킹] 조작! 배우들의 마지막 종영소감!</span>
+                        </a>
+                    </li>
+                    <li class="csl_inner">
+                        <a href="#" class="csli_cont">
+                            <amp-img src="http://img2.sbs.co.kr/img/seditor/VD/2017/09/13/VD56833068_w640.jpg" layout="responsive" alt="AMP"></amp-img>
+                            <span class="csli_title">[메이킹] 조작! 배우들의 마지막 종영소감!</span>
+                        </a>
+                    </li>
+                    <li class="csl_inner">
+                        <a href="#" class="csli_cont">
+                            <amp-img src="http://img2.sbs.co.kr/img/seditor/VD/2017/09/13/VD56833068_w640.jpg" layout="responsive" alt="AMP"></amp-img>
+                            <span class="csli_title">[메이킹] 조작! 배우들의 마지막 종영소감!</span>
+                        </a>
+                    </li>
+                    <li class="csl_inner">
+                        <a href="#" class="csli_cont">
+                            <amp-img src="http://img2.sbs.co.kr/img/seditor/VD/2017/09/12/VD52657228_w640.jpg" layout="responsive" alt="AMP"></amp-img>
+                            <span class="csli_title">[메이킹] 조작! 배우들의 마지막 종영소감!</span>
+                        </a>
+                    </li>
+                    <li class="csl_inner">
+                        <a href="#" class="csli_cont">
+                            <amp-img src="http://img2.sbs.co.kr/img/seditor/VD/2017/09/12/VD52657228_w640.jpg" layout="responsive" alt="AMP"></amp-img>
+                            <span class="csli_title">[메이킹] 조작! 배우들의 마지막 종영소감!</span>
+                        </a>
+                    </li>
+                    <li class="csl_inner">
+                        <a href="#" class="csli_cont">
+                            <amp-img src="http://img2.sbs.co.kr/img/seditor/VD/2017/09/12/VD52657228_w640.jpg" layout="responsive" alt="AMP"></amp-img>
+                            <span class="csli_title">[메이킹] 조작! 배우들의 마지막 종영소감!</span>
+                        </a>
+                    </li>
+                    <li class="csl_inner">
+                        <a href="#" class="csli_cont">
+                            <amp-img src="http://img2.sbs.co.kr/img/seditor/VD/2017/09/12/VD52657228_w640.jpg" layout="responsive" alt="AMP"></amp-img>
+                            <span class="csli_title">[메이킹] 조작! 배우들의 마지막 종영소감!</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div><!--//end:관련콘텐츠 -->
+
+        <!-- 인기콘텐츠 -->
+        <div class="content_section_public">
+            <h2 class="cont_sub_title">인기콘텐츠</h2>
+            <div class="cont_public_w">
+                <ul class="cont_public_list">
+                    <li class="cpl_inner">
+                        <a href="#" class="cpli_cont">
+                            <amp-img src="http://img2.sbs.co.kr/img/seditor/VD/2017/09/13/VD56833068_w640.jpg" layout="responsive" alt="AMP"></amp-img>
+                            <span class="cpli_title">[메이킹] 조작! 배우들의 마지막 종영소감!<span class="spli_date">2017.09.13</span></span>
+                        </a>
+                    </li>
+                    <li class="cpl_inner">
+                        <a href="#" class="cpli_cont">
+                            <amp-img src="http://img2.sbs.co.kr/img/seditor/VD/2017/09/13/VD56833068_w640.jpg" layout="responsive" alt="AMP"></amp-img>
+                            <span class="cpli_title">[메이킹] 조작! 배우들의 마지막 종영소감!<span class="spli_date">2017.09.13</span></span>
+                        </a>
+                    </li>
+                    <li class="cpl_inner">
+                        <a href="#" class="cpli_cont">
+                            <amp-img src="http://img2.sbs.co.kr/img/seditor/VD/2017/09/13/VD56833068_w640.jpg" layout="responsive" alt="AMP"></amp-img>
+                            <span class="cpli_title">[메이킹] 조작! 배우들의 마지막 종영소감!<span class="spli_date">2017.09.13</span></span>
+                        </a>
+                    </li>
+                    <li class="cpl_inner">
+                        <a href="#" class="cpli_cont">
+                            <amp-img src="http://img2.sbs.co.kr/img/seditor/VD/2017/09/13/VD56833068_w640.jpg" layout="responsive" alt="AMP"></amp-img>
+                            <span class="cpli_title">[메이킹] 조작! 배우들의 마지막 종영소감!<span class="spli_date">2017.09.13</span></span>
+                        </a>
+                    </li>
+                    <li class="cpl_inner">
+                        <a href="#" class="cpli_cont">
+                            <amp-img src="http://img2.sbs.co.kr/img/seditor/VD/2017/09/13/VD56833068_w640.jpg" layout="responsive" alt="AMP"></amp-img>
+                            <span class="cpli_title">[메이킹] 조작! 배우들의 마지막 종영소감!<span class="spli_date">2017.09.13</span></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div><!--//end: 인기콘텐츠 -->
+    </section>
+
+    <footer class="footer">
+        ⓒ SBS & SBS I & M : 무단복제 및 재배포 금지
+    </footer>
+
+</body>
+</html>

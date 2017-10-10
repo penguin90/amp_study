@@ -7,6 +7,9 @@
     <link rel="canonical" href="hello-world.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <style amp-boilerplate>
         body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     </style>
@@ -16,8 +19,6 @@
     <!-- 우리가 작성할 css는 이곳에 -->
     <style amp-custom>
         amp-img { margin: 0.5em; border:3px solid red; }
-        .wrap  {width:50%; }
-
     </style>
 </head>
 <body class="wrap">
@@ -25,5 +26,51 @@
     <amp-img src="https://www.ampproject.org/examples/images/amp.jpg"  width="900" height="508" layout="responsive"></amp-img><!-- layout   responsive 를 넣어야 full로 차게 나옴 -->
     <amp-youtube data-videoid="9Cfxm7cikMY" layout="responsive" width="480" height="270"></amp-youtube>
 
+    <!--amp캐러셀 allclip적용-->
+    <p> Selected slide:
+        <span [text]="+selectedSlide + 1">1</span>/3</p>
+
+    <amp-carousel controls
+                  type="slides"
+                  width="400"
+                  height="300"
+                  [slide]="selectedSlide"
+                  on="slideChange:AMP.setState({selectedSlide: event.index})">
+        <div class="list_cont">
+            <amp-img src="http://image.cloud.sbs.co.kr/smr/clip/201709/03/3kLAt5fLLUoT9hqtskBpv2_320.jpg"
+                     width="400"
+                     height="300"></amp-img>
+            <amp-fit-text layout="responsive"
+                          width="500"
+                          height="150"> 첫번째 콘텐츠</amp-fit-text>
+        </div>
+        <div class="list_cont">
+            <amp-img src="http://image.cloud.sbs.co.kr/smr/clip/201709/03/GJjgkF7XEa523uxVvtQin4_320.jpg"
+                     width="400"
+                     height="300"></amp-img>
+            <amp-fit-text layout="responsive"
+                          width="500"
+                          height="150"> 첫번째 콘텐츠</amp-fit-text>
+        </div>
+        <div class="list_cont">
+            <amp-img src="http://image.cloud.sbs.co.kr/smr/clip/201709/03/saW2nExiT7Lm2B2Wzw8Rzi_320.jpg"
+                     width="400"
+                     height="300"></amp-img>
+            <amp-fit-text layout="responsive"
+                          width="500"
+                          height="150"> 첫번째 콘텐츠</amp-fit-text>
+        </div>
+    </amp-carousel>
+
+<!-- AMP Iframe -->
+    <amp-iframe width="500"
+                height="281"
+                layout="responsive"
+                sandbox="allow-scripts allow-same-origin allow-popups"
+                allowfullscreen
+                frameborder="0"
+                src="https://player.vimeo.com/video/140261016">
+    </amp-iframe>
+    <a href="http://www.sbs.co.kr">SBS링크</a>
 </body>
 </html>
